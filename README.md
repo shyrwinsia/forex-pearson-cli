@@ -19,9 +19,9 @@ The pairs that are shown by the tool to be not correlated doesn't mean there are
 ## Usage
 Use the `fetch` command to retrieve the PCC of the daily ranges of the forex pairs. A watchlist file has to be loaded in order to use the tool. To load the watchfile, use the `load` command. When a watchfile is loaded, the items can be listed with the `list` command.
 
-Any item can be set and unset using the `set` and `unset` commands respectively. This is meant to reflect a position in the portfolio. The set item will be colored green and the items that have a correlation with the selected item will be grayed out. The grayed out items cannot be selected. The unselectable items are the ones with high correlation to the set items and thus multiplies the risk of the portfolio.
+Any item can be set and unset using the `set` and `unset` commands respectively. The set item will be colored green and the items that have a correlation with the selected item will be grayed out. The grayed out items cannot be selected. The unselectable items are the ones with high correlation to the set items.
 
-When the `update` command is called and if two or more items will have a correlation with the latest data, the green colors will turn into red. This will not return to green until one or more of the conflicting items are toggled using the `unset` command.
+When the `update` command is called and the set items have a correlation in the latest data, the green colors will turn into red. This will not return to green until the conflicting items are unset using the `unset` command.
 <!-- usage -->
 ```sh-session
 $ yarn
