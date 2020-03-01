@@ -1,5 +1,4 @@
 # forex-pearson-cli
-=================
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io) ![License](https://img.shields.io/github/license/shyrwinsia/forex-pearson-cli) ![Last Commit](https://img.shields.io/github/last-commit/shyrwinsia/forex-pearson-cli)
 
