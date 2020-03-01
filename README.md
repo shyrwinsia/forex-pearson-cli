@@ -100,7 +100,7 @@ lists the watchlist items
 
 ```
 USAGE
-  $ forex-pearson-cli load [FILE]
+  $ forex-pearson-cli list
 
 OPTIONS
   -f, --force
@@ -126,9 +126,12 @@ USAGE
   $ forex-pearson-cli [COMMAND]
 
 COMMANDS
-  fetch  Fetches latest correlations
+  fetch  fetches latest correlations
   help   display help for forex-pearson-cli
+  list   lists the watchlist items
   load   load a watchlist
+  set    sets an item on the watchlist
+  unset  unsets an item on the watchlist
 ```
 <!-- commandsstop -->
 ## Samples
