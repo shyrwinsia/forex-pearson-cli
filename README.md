@@ -41,7 +41,7 @@ USAGE
 * [`forex-pearson-cli load [FILE]`](#forex-pearson-cli-load-file)
 * [`forex-pearson-cli list`](#forex-pearson-cli-list)
 * [`forex-pearson-cli set [ITEM]`](#forex-pearson-cli-set-item)
-* [`forex-pearson-cli load [ITEM]`](#forex-pearson-cli-unset-item)
+* [`forex-pearson-cli unset [ITEM]`](#forex-pearson-cli-unset-item)
 * [`forex-pearson-cli help [COMMAND]`](#forex-pearson-cli-help-command)
 
 ### `forex-pearson-cli fetch`
