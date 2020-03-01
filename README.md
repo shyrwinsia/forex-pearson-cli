@@ -55,12 +55,11 @@ loads a watchlist
 
 ```
 USAGE
-  $ forex-pearson-cli fetch
+  $ forex-pearson-cli load [FILE]
 
 OPTIONS
   -f, --force
   -h, --help       show CLI help
-  -w, --watchlist=watchlist  file path to watchlist
 
 EXAMPLE
   $ forex-pearson-cli load ~/mywatchlist.txt
