@@ -8,7 +8,7 @@ const writeFile = promisify(fs.writeFile);
 const readFile = promisify(fs.readFile);
 
 class Load extends Command {
-  static description = 'loads a watchlist'
+  static description = 'load a watchlist'
 
   static flags = {
     version: flags.version({ char: 'v' }),
@@ -20,15 +20,15 @@ class Load extends Command {
   async run() {
     const { args } = this.parse(Load)
     if (!args.file) {
-      this.error(`Provide a path to the watch file`)
+      this.error(`provide a path to the watch file`)
     }
 
-    cli.action.start(`Loading watchfile: ${args.file}`)
+    cli.action.start(`loading watchfile: ${args.file}`)
     let contents: string = await readFile(args.file, 'utf8')
 
     let rows = contents.split('\n');
     let pairs: object[] = []
-    rows.forEach((i: string) => pairs.push({ pair: i, selected: false }))
+    rows.forEach((i: string) => pairs.push({ pair: i }))
 
     if (!fs.existsSync('data')) {
       fs.mkdirSync('data');
@@ -36,7 +36,7 @@ class Load extends Command {
 
     await writeFile('data/watchlist', JSON.stringify(pairs));
     cli.action.stop()
-    this.log(`${chalk.green('[Success]')} Watchlist was loaded`)
+    this.log(`${chalk.green('watchlist was loaded')}`)
   }
 }
 

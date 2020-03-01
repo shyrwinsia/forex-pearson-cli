@@ -24,11 +24,11 @@ class Fetch extends Command {
     let csv = await this.getCsvFromUrl(URL)
     let contents = await this.processData(csv)
     await this.writeJsonToFile(contents)
-    this.log(`${chalk.green('[Success]')} Data is now up-to-date`)
+    this.log(`${chalk.green('data is now up-to-date')}`)
   }
 
   async getCsvFromUrl(url: string) {
-    cli.action.start(`Fetching correlations`)
+    cli.action.start(`fetching correlations`)
     try {
       let contents = await request(url)
       cli.action.stop()
@@ -40,7 +40,7 @@ class Fetch extends Command {
   }
 
   processData(contents: string) {
-    cli.action.start(`Processing data`)
+    cli.action.start(`processing data`)
     let rows: string[]
     let quotes: any[] = []
     let sources: any[] = []
@@ -62,7 +62,7 @@ class Fetch extends Command {
   }
 
   async writeJsonToFile(json: object) {
-    cli.action.start(`Writing data`)
+    cli.action.start(`writing data`)
 
     if (!fs.existsSync('data')) {
       fs.mkdirSync('data');

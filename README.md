@@ -51,10 +51,10 @@ OPTIONS
 
 EXAMPLE
   $ forex-pearson-cli fetch
-  Fetching correlations... done
-  Processing data... done
-  Writing data... done
-  [Success] Data is now up-to-date
+  fetching correlations... done
+  processing data... done
+  writing data... done
+  data is now up-to-date
 ```
 
 ### `forex-pearson-cli load`
@@ -71,8 +71,31 @@ OPTIONS
 
 EXAMPLE
   $ forex-pearson-cli load ~/mywatchlist.txt
-  Loading watchfile: /home/user/mywatchlist.txt... done
-  [Success] Watchlist was loaded
+  loading watchfile: /home/user/mywatchlist.txt... done
+  watchlist was loaded
+```
+
+### `forex-pearson-cli list`
+
+lists the watchlist entries
+
+```
+USAGE
+  $ forex-pearson-cli load [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+
+EXAMPLE
+  $ forex-pearson-cli list
+  USDEUR
+  USDCHF
+  USDGBP
+  USDJPY
+  EURAUD
+  GBPAUD
+  AUDJPY
 ```
 
 ### `forex-pearson-cli help [COMMAND]`
@@ -86,7 +109,7 @@ USAGE
 COMMANDS
   fetch  Fetches latest correlations
   help   display help for forex-pearson-cli
-  load   Load a watchlist
+  load   load a watchlist
 ```
 <!-- commandsstop -->
 ## Samples
