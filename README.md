@@ -9,15 +9,17 @@ A command-line tool to retrieve the Pearson Correlation Coefficient (PCC) of the
 * [Commands](#commands)
 * [Samples](#samples)
 <!-- tocstop -->
+## Goals
+The aim of this tool is to show at a glance which pairs on the watchlist are correlated. Correlated pairs move in the same direction and thus magnifies the risk of the positions of in a portfolio. It is undesirable to trade in currency pairs that are highly correlated. This exposes the portfolio to more risk than necessary. 
+
+The pairs that are shown by the tool to be not correlated does not meant there is no inherent risk. It merely shows it does not move with the rest of the items in the watchlist.
+
 ## Usage
 Use the `fetch` command to retrieve the PCC of the daily ranges of the forex pairs. A watchlist file has to be loaded in order to use the tool. To load the watchfile, use the `load` command. When a watchfile is loaded, the items can be listed with the `list` command.
 
-Any item can be toggled using the `set` and `unset` commands. This is meant to reflect a position in the portfolio. The set item will be colored green and the items that have a correlation with the selected item will be grayed out. The grayed out items cannot be selected. The unselectable items are the ones with high correlation to the set items and thus multiplies the risk of the portfolio.
+Any item can be set and unset using the `set` and `unset` commands respectively. This is meant to reflect a position in the portfolio. The set item will be colored green and the items that have a correlation with the selected item will be grayed out. The grayed out items cannot be selected. The unselectable items are the ones with high correlation to the set items and thus multiplies the risk of the portfolio.
 
 When the `update` command is called and if two or more items will have a correlation with the latest data, the green colors will turn into red. This will not return to green until one or more of the conflicting items are toggled using the `unset` command.
-
-The items in the watchlist that remain active are pairs that do not have correlatation to other items on the list. This doesn't mean they don't have any risk. It only means they don't multiply the risk of the current positions.
-
 <!-- usage -->
 ```sh-session
 $ yarn
