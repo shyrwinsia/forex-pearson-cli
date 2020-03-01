@@ -33,8 +33,9 @@ USAGE
 <!-- usagestop -->
 ## Commands
 <!-- commands -->
-* [`forex-pearson-cli fetch`](#forex-pearson-cli-hello-file)
+* [`forex-pearson-cli fetch`](#forex-pearson-cli-fetch)
 * [`forex-pearson-cli load [FILE]`](#forex-pearson-cli-load)
+* [`forex-pearson-cli list`](#forex-pearson-cli-list)
 * [`forex-pearson-cli help [COMMAND]`](#forex-pearson-cli-help-command)
 
 ### `forex-pearson-cli fetch`
@@ -57,7 +58,7 @@ EXAMPLE
   data is now up-to-date
 ```
 
-### `forex-pearson-cli load`
+### `forex-pearson-cli load [FILE]`
 
 loads a watchlist
 
