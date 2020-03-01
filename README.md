@@ -8,8 +8,17 @@ A command-line tool to retrieve the Pearson Correlation Coefficient (PCC) of the
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
+* [Samples](#samples)
 <!-- tocstop -->
 # Usage
+Use the `fetch` command to retrieve the PCC of the daily ranges of the forex pairs. A watchlist file has to be loaded in order to use the tool. To load the watchfile, use the `load` command. When a watchfile is loaded, the entries can be listed with the `list` command.
+
+Any entry can be toggled using the `set` and `unset` commands. This is meant to reflect a position in the porfolio. The set entry will be colored green and the entries that have a correlation with the selected item will be grayed out. The grayed out items cannot be selected. The unselectable entries are the ones with high correlation to the set entries and thus multiplies the risk of the portfolio.
+
+When the `update` command is called and if two or more items will have a correlation with the latest data, the green colors will turn into red. This will not return to green until one or more of the conflicting entries are toggled using the  `unset` command.
+
+The items in the watchlist that remain active are pairs that do not have correlatation to other entries on the list. This doesn't mean they don't have any risk. It only means they don't multiply the risk of the current positions.
+
 <!-- usage -->
 ```sh-session
 $ yarn
@@ -81,3 +90,16 @@ COMMANDS
   load   Load a watchlist
 ```
 <!-- commandsstop -->
+# Samples
+## Watchlist file
+```
+USDEUR
+USDCHF
+USDGBP
+USDJPY
+EURAUD
+GBPAUD
+AUDJPY
+```
+# Disclaimer
+The information from this tool is not intended as, and shall not be understood or construed as, financial advice. I am not an attorney or a financial advisor, nor am I holding myself out to be. The information from this tool is not a substitute for financial advice from a professional. Nothing from this tool should be understood as a recommendation that you should not consult a financial professional. It is expressly recommended to seek advice from a professional.
