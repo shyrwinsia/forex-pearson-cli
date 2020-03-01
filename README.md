@@ -82,18 +82,6 @@ EXAMPLE
   watchlist was loaded
 ```
 
-### `forex-pearson-cli set [ITEM]`
-
-sets an item on the watchlist
-
-**WIP**
-
-### `forex-pearson-cli unset [ITEM]`
-
-unsets an item on the watchlist
-
-**WIP**
-
 ### `forex-pearson-cli list`
 
 lists the watchlist items
@@ -117,6 +105,20 @@ EXAMPLE
   AUDJPY
 ```
 
+### `forex-pearson-cli set [ITEM]`
+
+sets an item on the watchlist
+
+**WIP**
+
+
+### `forex-pearson-cli unset [ITEM]`
+
+unsets an item on the watchlist
+
+**WIP**
+
+
 ### `forex-pearson-cli help [COMMAND]`
 
 display help for forex-pearson-cli
@@ -129,7 +131,7 @@ COMMANDS
   fetch  fetches latest correlations
   help   display help for forex-pearson-cli
   list   lists the watchlist items
-  load   load a watchlist
+  load   loads a watchlist
   set    sets an item on the watchlist
   unset  unsets an item on the watchlist
 ```
