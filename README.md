@@ -10,13 +10,13 @@ A command-line tool to retrieve the Pearson Correlation Coefficient (PCC) of the
 * [Samples](#samples)
 <!-- tocstop -->
 ## Usage
-Use the `fetch` command to retrieve the PCC of the daily ranges of the forex pairs. A watchlist file has to be loaded in order to use the tool. To load the watchfile, use the `load` command. When a watchfile is loaded, the entries can be listed with the `list` command.
+Use the `fetch` command to retrieve the PCC of the daily ranges of the forex pairs. A watchlist file has to be loaded in order to use the tool. To load the watchfile, use the `load` command. When a watchfile is loaded, the items can be listed with the `list` command.
 
-Any entry can be toggled using the `set` and `unset` commands. This is meant to reflect a position in the porfolio. The set entry will be colored green and the entries that have a correlation with the selected item will be grayed out. The grayed out items cannot be selected. The unselectable entries are the ones with high correlation to the set entries and thus multiplies the risk of the portfolio.
+Any item can be toggled using the `set` and `unset` commands. This is meant to reflect a position in the portfolio. The set item will be colored green and the items that have a correlation with the selected item will be grayed out. The grayed out items cannot be selected. The unselectable items are the ones with high correlation to the set items and thus multiplies the risk of the portfolio.
 
-When the `update` command is called and if two or more items will have a correlation with the latest data, the green colors will turn into red. This will not return to green until one or more of the conflicting entries are toggled using the  `unset` command.
+When the `update` command is called and if two or more items will have a correlation with the latest data, the green colors will turn into red. This will not return to green until one or more of the conflicting items are toggled using the `unset` command.
 
-The items in the watchlist that remain active are pairs that do not have correlatation to other entries on the list. This doesn't mean they don't have any risk. It only means they don't multiply the risk of the current positions.
+The items in the watchlist that remain active are pairs that do not have correlatation to other items on the list. This doesn't mean they don't have any risk. It only means they don't multiply the risk of the current positions.
 
 <!-- usage -->
 ```sh-session
@@ -36,6 +36,8 @@ USAGE
 * [`forex-pearson-cli fetch`](#forex-pearson-cli-fetch)
 * [`forex-pearson-cli load [FILE]`](#forex-pearson-cli-load-file)
 * [`forex-pearson-cli list`](#forex-pearson-cli-list)
+* [`forex-pearson-cli set [ITEM]`](#forex-pearson-cli-set-item)
+* [`forex-pearson-cli load [ITEM]`](#forex-pearson-cli-unset-item)
 * [`forex-pearson-cli help [COMMAND]`](#forex-pearson-cli-help-command)
 
 ### `forex-pearson-cli fetch`
@@ -76,9 +78,21 @@ EXAMPLE
   watchlist was loaded
 ```
 
+### `forex-pearson-cli set [ITEM]`
+
+sets an item on the watchlist
+
+**WIP**
+
+### `forex-pearson-cli unset [ITEM]`
+
+unsets an item on the watchlist
+
+**WIP**
+
 ### `forex-pearson-cli list`
 
-lists the watchlist entries
+lists the watchlist items
 
 ```
 USAGE
