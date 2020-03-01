@@ -34,7 +34,7 @@ USAGE
 ## Commands
 <!-- commands -->
 * [`forex-pearson-cli fetch`](#forex-pearson-cli-fetch)
-* [`forex-pearson-cli load [FILE]`](#forex-pearson-cli-load)
+* [`forex-pearson-cli load [FILE]`](#forex-pearson-cli-load-file)
 * [`forex-pearson-cli list`](#forex-pearson-cli-list)
 * [`forex-pearson-cli help [COMMAND]`](#forex-pearson-cli-help-command)
 
