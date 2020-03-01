@@ -1,4 +1,4 @@
-forex-pearson-cli
+# forex-pearson-cli
 =================
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io) ![License](https://img.shields.io/github/license/shyrwinsia/forex-pearson-cli) ![Last Commit](https://img.shields.io/github/last-commit/shyrwinsia/forex-pearson-cli)
@@ -10,7 +10,7 @@ A command-line tool to retrieve the Pearson Correlation Coefficient (PCC) of the
 * [Commands](#commands)
 * [Samples](#samples)
 <!-- tocstop -->
-# Usage
+## Usage
 Use the `fetch` command to retrieve the PCC of the daily ranges of the forex pairs. A watchlist file has to be loaded in order to use the tool. To load the watchfile, use the `load` command. When a watchfile is loaded, the entries can be listed with the `list` command.
 
 Any entry can be toggled using the `set` and `unset` commands. This is meant to reflect a position in the porfolio. The set entry will be colored green and the entries that have a correlation with the selected item will be grayed out. The grayed out items cannot be selected. The unselectable entries are the ones with high correlation to the set entries and thus multiplies the risk of the portfolio.
@@ -32,13 +32,13 @@ USAGE
 ...
 ```
 <!-- usagestop -->
-# Commands
+## Commands
 <!-- commands -->
 * [`forex-pearson-cli fetch`](#forex-pearson-cli-hello-file)
 * [`forex-pearson-cli load [FILE]`](#forex-pearson-cli-load)
 * [`forex-pearson-cli help [COMMAND]`](#forex-pearson-cli-help-command)
 
-## `forex-pearson-cli fetch`
+### `forex-pearson-cli fetch`
 
 fetches latest correlations
 
@@ -58,7 +58,7 @@ EXAMPLE
   [Success] Data is now up-to-date
 ```
 
-## `forex-pearson-cli load`
+### `forex-pearson-cli load`
 
 loads a watchlist
 
@@ -76,7 +76,7 @@ EXAMPLE
   [Success] Watchlist was loaded
 ```
 
-## `forex-pearson-cli help [COMMAND]`
+### `forex-pearson-cli help [COMMAND]`
 
 display help for forex-pearson-cli
 
@@ -90,8 +90,8 @@ COMMANDS
   load   Load a watchlist
 ```
 <!-- commandsstop -->
-# Samples
-## Watchlist file
+## Samples
+### Watchlist file
 ```
 USDEUR
 USDCHF
@@ -101,5 +101,5 @@ EURAUD
 GBPAUD
 AUDJPY
 ```
-# Disclaimer
+## Disclaimer
 The information from this tool is not intended as, and shall not be understood or construed as, financial advice. I am not an attorney or a financial advisor, nor am I holding myself out to be. The information from this tool is not a substitute for financial advice from a professional. Nothing from this tool should be understood as a recommendation that you should not consult a financial professional. It is expressly recommended to seek advice from a professional.
