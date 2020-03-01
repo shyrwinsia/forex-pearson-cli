@@ -10,9 +10,9 @@ A command-line tool to retrieve the Pearson Correlation Coefficient (PCC) of the
 * [Samples](#samples)
 <!-- tocstop -->
 ## Goals
-The aim of this tool is to show at a glance which pairs on the watchlist are correlated. Correlated pairs move in the same direction and thus magnifies the risk of the positions of in a portfolio. It is undesirable to trade in currency pairs that are highly correlated. This exposes the portfolio to more risk than necessary. 
+The aim of this tool is to show at a glance which pairs on the watchlist are correlated. Correlated pairs move in the same direction and thus magnifies the risk of positions. It is undesirable to trade in currency pairs that are highly correlated. This exposes the portfolio to more risk than necessary. 
 
-The pairs that are shown by the tool to be not correlated does not meant there is no inherent risk. It merely shows it does not move with the rest of the items in the watchlist.
+The pairs that are shown by the tool to be not correlated does not meant there is no inherent risk. It merely shows it does not move with the rest of the pairs in the watchlist.
 
 ## Usage
 Use the `fetch` command to retrieve the PCC of the daily ranges of the forex pairs. A watchlist file has to be loaded in order to use the tool. To load the watchfile, use the `load` command. When a watchfile is loaded, the items can be listed with the `list` command.
