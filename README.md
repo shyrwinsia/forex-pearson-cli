@@ -21,7 +21,7 @@ Use the `fetch` command to retrieve the PCC of the daily ranges of the forex pai
 
 Any item can be set and unset using the `set` and `unset` commands respectively. The set item will be colored green and the items that have a correlation with the selected item will be grayed out. The grayed out items cannot be selected. The unselectable items are the ones with high correlation to the set items.
 
-When the `update` command is called and the set items have a correlation in the latest data, the green colors will turn into red. This will not return to green until the conflicting items are unset using the `unset` command.
+When the `fetch` command is called and the previously set items now have a correlation, the green colors will turn into red. This will not return to green until the all but one of the correlated items are unset using the `unset` command.
 <!-- usage -->
 ```sh-session
 $ yarn
