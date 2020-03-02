@@ -2,7 +2,7 @@
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io) ![License](https://img.shields.io/github/license/shyrwinsia/fxpc) ![Last Commit](https://img.shields.io/github/last-commit/shyrwinsia/fxpc)
 
-FXPC (Forex Pearson Correlation) is a command-line tool to retrieve the Pearson Correlation Coefficient (PCC) of the world's top traded currency pairs. This can be used to provide insight on what pairs move the same way (or opposite) and help in calculating the risk.
+**fxpc** (Forex Pearson Correlation) is a command-line tool to retrieve the Pearson Correlation Coefficient (PCC) of the world's top traded currency pairs. This can be used to provide insight on what pairs move the same way (or opposite) and help in calculating the risk.
 
 <!-- toc -->
 
@@ -15,7 +15,7 @@ FXPC (Forex Pearson Correlation) is a command-line tool to retrieve the Pearson 
 
 ## Goals
 
-The aim of this tool is to show at a glance which pairs on the watchlist are correlated. Correlated pairs move together and thus magnifies the risk of positions. It is undesirable to trade in currency pairs that are highly correlated. This exposes the portfolio to more risk than necessary.
+The aim of this tool is to show at a glance which pairs on a watchlist are correlated. Correlated pairs move together and thus magnifies the risk of positions. It is undesirable to trade in currency pairs that are highly correlated because it exposes the portfolio to more risk than necessary. There are strategies to reduce the trading risk of correlated pairs but it is not within the scope of this tool.
 
 The pairs that are shown by the tool to be not correlated doesn't mean there are no inherent risks. It merely shows it does not move with the rest of the pairs in the watchlist.
 
