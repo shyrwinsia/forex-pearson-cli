@@ -1,11 +1,11 @@
 {
-  "name": "forex-pearson-cli",
+  "name": "fxpc",
   "version": "0.0.0",
   "author": "Shyrwinsteel Sia @shyrwinsia",
   "bin": {
-    "forex-pearson-cli": "./bin/run"
+    "fxpc": "./bin/run"
   },
-  "bugs": "https://github.com/shyrwinsia/forex-pearson-cli/issues",
+  "bugs": "https://github.com/shyrwinsia/fxpc/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -39,7 +39,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/shyrwinsia/forex-pearson-cli",
+  "homepage": "https://github.com/shyrwinsia/fxpc",
   "keywords": [
     "oclif"
   ],
@@ -47,12 +47,12 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "forex-pearson-cli",
+    "bin": "fxpc",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
-  "repository": "shyrwinsia/forex-pearson-cli",
+  "repository": "shyrwinsia/fxpc",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
