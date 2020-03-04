@@ -17,7 +17,7 @@
 
 The aim of this tool is to show at a glance which pairs on a watchlist are correlated. Correlated pairs move together and thus magnifies the risk of positions. It is undesirable to trade in currency pairs that are highly correlated because it exposes the portfolio to more risk than necessary. There are strategies to reduce the trading risk of correlated pairs but it is not within the scope of this tool.
 
-The pairs that are shown by the tool to be not correlated doesn't mean there are no inherent risks. It merely shows it does not move with the rest of the pairs in the watchlist.
+The pairs that are shown by the tool to be not correlated doesn't mean there are no inherent risks. It merely shows it does not move with the rest of the pairs in the watchlist. On the other hand, correlations that exist might entirely be spurious.
 
 ## Usage
 
